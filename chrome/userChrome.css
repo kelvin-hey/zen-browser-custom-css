@@ -1,0 +1,29 @@
+/* Import themes */
+@import "Cohesion/Cohesion.css";
+@import "natsumi-tweaks/natsumi-tweaks.css";
+
+/* Make popups use the workspace's gradient as background 
+ * Author: https://www.reddit.com/r/zen_browser/comments/1ikmo85/make_popups_use_the_workspaces_gradient_as/
+ */
+:root {
+    --zen-dialog-background: var(--zen-main-browser-background-toolbar) !important;
+    --panel-separator-color: rgba(0, 0, 0, 0.17) !important;
+    --zen-appcontent-border: none !important;
+    --button-hover-bg-color: rgba(0, 0, 0, 0.17) !important;
+    --panel-item-hover-bgcolor: var(--button-hover-bg-color) !important;
+}
+
+/* Add borders */
+#tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+    border-radius: 24px !important;
+}
+
+/* Add drop shadow */
+#tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Add left margin */
+.browserSidebarContainer{    
+    margin-left: 2px !important;
+}
