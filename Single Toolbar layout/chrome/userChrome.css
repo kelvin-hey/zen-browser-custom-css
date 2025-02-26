@@ -1,0 +1,26 @@
+/* Import themes
+ * Author: https://github.com/TheBigWazz/ZenThemes/tree/main/Zen-current-theme
+ */
+@import "Cohesion/Cohesion.css";
+@import "natsumi-tweaks/natsumi-tweaks.css";
+
+/* Set the background of popups to use the workspace's gradient
+ * Author: https://www.reddit.com/r/zen_browser/comments/1ikmo85/make_popups_use_the_workspaces_gradient_as/
+ */
+:root {
+    --zen-dialog-background: var(--zen-main-browser-background-toolbar) !important;
+    --panel-separator-color: rgba(0, 0, 0, 0.17) !important;
+    --zen-appcontent-border: none !important;
+    --button-hover-bg-color: rgba(0, 0, 0, 0.17) !important;
+    --panel-item-hover-bgcolor: var(--button-hover-bg-color) !important;
+}
+
+/* Add shadow to the Browser Container */
+.browserSidebarContainer {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Add margin to the Nav Bar */
+#nav-bar {
+    margin-left: -4px !important;
+}
